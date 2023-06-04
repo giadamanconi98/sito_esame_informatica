@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head> 
+        <title>Learn by listening</title>
+        
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Roboto+Serif:ital,opsz,wght@1,8..144,900&family=Rozha+One&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/969c53cd30.js" crossorigin="anonymous"></script>
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <!--codice quiz-->
+        <script type="text/javascript" language="javascript">
+            <!--
+            var name=prompt("PER FAVORE INSERISCI IL TUO NOME 😊","")
+            // -->
+        </script>
+
+        <script type="text/javascript" language="javascript">
+            function quiz() {
+            var i = 0
+            var total=document.forms.length-1
+            var ncorrect=0
+            var response=new Array(total)
+            var theForms=new Array(total)
+            var answer=new Array(total)
+            for (i=1; i<=total;i++)
+            theForms[i]=document.forms[i-1]
+            for (i=1; i <= total; i++)
+            response[i]=theForms[i].answer.selectedIndex
+            for (i=1; i<=total;i++)
+            answer[i]=theForms[i].correct.value
+            var flag=true
+            for (i=1; i <= total; i++)
+            if (response[i]==0) {
+            alert("Attenzione la domanda #"+i+" non ha avuto risposta")
+            flag=false
+            }
+            if (flag) {
+            for (i=1; i <= total; i++)
+            if (response[i]==answer[i]) ncorrect++
+            document.total.score.value = ncorrect
+            var per = Math.round((ncorrect / total) * 100)
+            document.total.percent.value = per
+            document.total.outof.value=total
+            } //end if (flag)
+            }
+            // -->
+            </script>
+
+
+
+
+
+
+        <link rel="stylesheet" href="file_css/style_pages.css">
+    </head>
+    <body>
+        <header class="header">
+            <img id="logohome" src="immagini/logo_orizz.png" alt="logo2"/>
+            <nav>
+                <ul class="menu">
+                    <li class="primo"><a class="link_nero nounderline" href="index.html">HOME</a></li>
+                        <div class="dropdown">
+                            <span>IL METODO</span>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a class="link_nero nounderline" href="method.html">SCOPRI IL METODO</a>
+                                    <li><a class="link_attivo" href="#">VAI AL TEST</a></li>
+                                    <li><a class="link_nero nounderline" href="start.html">INIZIA SUBITO!</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <li class="terzo"><a class="link_nero nounderline" href="recensioni.html">DICONO DI NOI</a></li>
+                    <li class="quarto"><a class="link_nero nounderline" href="about.html">ABOUT US</a></li>
+                    <li class="quinto"><a class="link_nero nounderline" href="contact.html">CONTATTI</a></li>
+                    <li class="sesto"><a class="link_nero nounderline" href="work.html">LAVORA CON NOI</a></li>
+                </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </nav>
+        </header>
+
+    
+
+
+
+        <section class="iniziopagina" style="font-size: larger;">
+            <h1>Quiz</h1>
+            Ciao <strong>
+                <script type="text/javascript" language="javascript">
+                <!--
+                document.write(name);
+                // -->
+                </script>
+                </strong>, vuoi mettere alla prova il tuo attuale livello di inglese?<br><br>
+                            Sei nel posto giusto!<br><br>
+            
+            <section class="boxdomande">   
+                <section class="rispondi">Rispondi alle seguenti domande: </section>          
+                <form action=quiz.htm method=post name=form1>
+                    <h2><strong>• This is my friend. _____ name is Alan.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. Her
+                    <option value=2> 2. His
+                    <option value=3> 3. Our
+                    <option value=4> 4. Yours
+                    </option>
+                    </select>
+                    <input name=correct size="4" type=hidden value=2>
+                </form>
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• Mark is _____.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. friend my sister
+                    <option value=2> 2. my sister friend's
+                    <option value=3> 3. friend from my sister
+                    <option value=4> 4. my sister's friend
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=4>
+                </form>
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• Sorry, I can’t talk. I _____ right now.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. 'm driving
+                    <option value=2> 2. driving
+                    <option value=3> 3. drives
+                    <option value=4> 4.drive
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=1>
+                </form>
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• _____ a cup of tea? No, thank you.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. Would you like
+                    <option value=2> 2. Do you like
+                    <option value=3> 3. Want you
+                    <option value=4> 4. Are you like
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=1>
+                </form>
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• The living room is _____ than the kitchen.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. more bigger
+                    <option value=2> 2. biggest
+                    <option value=3> 3. bigger
+                    <option value=4> 4. more big
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=3>
+                </form>
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• My bike is very old. I am going _____ a new one soon.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. to buy
+                    <option value=2> 2. buying
+                    <option value=3> 3. to will buy
+                    <option value=4> 4. buy
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=1>
+                </form>
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• Martha is a vegetarian. She _____ meat.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. sometimes eats
+                    <option value=2> 2. never eats
+                    <option value=3> 3. often eats
+                    <option value=4> 4. usually eats
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=2>
+                </form>
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• They _____ into the centre when it started to rain heavily.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. walked
+                    <option value=2> 2. walk
+                    <option value=3> 3. are walking
+                    <option value=4> 4. were walking
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=4>
+                </form>
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• These are the photos _____ I took on holiday.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. which
+                    <option value=2> 2. what
+                    <option value=3> 3. who
+                    <option value=4> 4. where
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=1>
+                </form>
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• I wasn’t interested in the conference very much. _____.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. Neither was I.
+                    <option value=2> 2. I didn't, too.
+                    <option value=3> 3. So I wasn't.
+                    <option value=4> 4. Nor I did.
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=1>
+                </form>
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• Take a warm coat, _____ you might get very cold outside.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. in order to
+                    <option value=2> 2. in case
+                    <option value=3> 3. so that
+                    <option value=4> 4. otherwise
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=2>
+                </form>
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• _____ this great book and I can’t wait to see how it ends.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. I've read
+                    <option value=2> 2. I don't read
+                    <option value=3> 3. I've been reading
+                    <option value=4> 4. I read
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=3>
+                </form>  
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• We won’t catch the plane _____ we leave home now! Please hurry up!</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. if
+                    <option value=2> 2. unless
+                    <option value=3> 3. providing that
+                    <option value=4> 4. except
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=2>
+                </form>  
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• She _____ for her mobile for two days when she finally found it in the garage.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. had been looking
+                    <option value=2> 2. were looking
+                    <option value=3> 3. had been looked
+                    <option value=4> 4. looked
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=1>
+                </form>  
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• How about _____ to a restaurant tonight?</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. go
+                    <option value=2> 2. to go
+                    <option value=3> 3. going
+                    <option value=4> 4. for going
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=3>
+                </form>  
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• Excuse me, can you _____ me the way to the bank, please?</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. give
+                    <option value=2> 2. take
+                    <option value=3> 3. say
+                    <option value=4> 4. tell
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=4>
+                </form>  
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• He said that his friends _____ to speak to him after they lost the match.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. not want
+                    <option value=2> 2. weren't
+                    <option value=3> 3. aren't wanting
+                    <option value=4> 4. didn't want
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=4>
+                </form>  
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• Alison _____ action films.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. no likes
+                    <option value=2> 2. doesn't like
+                    <option value=3> 3. isn't like
+                    <option value=4> 4. don't like
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=2>
+                </form>  
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• There aren't _____ buses early in the morning.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. any
+                    <option value=2> 2. some
+                    <option value=3> 3. no
+                    <option value=4> 4. a
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=1>
+                </form>  
+
+                <form action=risultatoquiz.htm method=post name=form1>
+                    <h2><strong>• Suzanne _____ shopping every day.</strong></h2><br>
+                    <select class="opzioniquiz" name=answer size=1>
+                    <option selected value=0>
+                    <option value=1> 1. going
+                    <option value=2> 2. go
+                    <option value=3> 3. goes
+                    <option value=4> 4. is going
+                    </option>
+                    </select>
+                    <input class="opzioniquiz" name=correct size="4" type=hidden value=3>
+                </form>  
+            </section>  
+
+            <section style="font-size: larger;">
+                <form action=triviaquiz.html method=post name=total>
+                    <input class="bottonerisultato" name=button onclick=quiz() type=button value="Clicca qui per il risultato">
+            </section>
+            <section class="boxrisultati">
+                    Carǝ <script type="text/javascript" language="javascript">
+                        <!--
+                        document.write(name);
+                        // -->
+                        </script>
+                        , hai risposto correttamente a <input class="datirisultato" name=score size=2> domande <br>su un totale di <input class="datirisultato" name=outof size=2>!<br>
+                        Hai ottentuo una percentuale di valutazione pari a <input class="datirisultato" name=percent size=2>%
+            </section>    
+            <section class="descrizionerisultati" style="font-size: large;">
+                <h2>Legenda dei punteggi</h2>
+                <div class="zero-cinquanta">
+                    <h3>Da 0% a 50%:</h3>
+                    <p><br>Sei ad un livello base 😊 <br>Learn by Listening è il metodo che fa per te!<br>Esercitati con le tue canzoni preferite e.. Vedrai che miglioramenti!</p>
+                </div>
+                <div class="cinquata-ottanta">
+                    <h3>Da 50% a 80%:</h3>
+                    <p><br>Bravə! Sei a buon punto 💪🏼 <br>Però ti sfugge ancora qualche dettaglio dell' inglese, vero?<br>Potrai scegliere canzoni sempre più difficili per aumentare le tue skill!</p>
+                </div>
+                <div class="ottanta-cento">
+                    <h3>Da 80% a 100%:</h3>
+                    <p><br>Sei davvero bravissimə! 🤩 <br>L'inglese per te ha ancora pochissimi segreti, sei veramente un portento!<br>Learn by Listening sarà puro divertimento! 🔝</p>
+                </div>
+            </section>
+            <section>
+                <p>Questo è il tuo livello di partenza.<br>Prova a rifare il quiz dopo aver provato il metodo Learn by Listening per qualche tempo, così potrai verificare l'avanzamento dei tuoi progressi! 💥</p>
+            </section>
+            <section class="finepagina">
+                <a href="start.html" title="scegli_canzone">
+                <input class="bottone" name="button" value="Inizia subito!" type="submit">
+                </a>
+            </section>
+
+        <footer>
+            <section>
+                <p>Seguici sui nostri canali social!</p>
+                    <!--icone social-->
+                    <div class="iconesocial">
+                        <a href="https://www.facebook.com/profile.php?id=100092352554851" target="_blank" title="facebook"><i class="fa-brands fa-facebook" style="color: black; font-size: 25px;"></i></a>
+                        <a href="https://instagram.com/learn.by.listening?igshid=ZDc4ODBmNjlmNQ==" target="_blank" title="instagram"><i class="fa-brands fa-instagram" style="color: black; font-size: 25px;"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=393930979696&text&type=phone_number&app_absent=0" target="_blank" title="whatsapp"><i class="fa-brands fa-whatsapp" style="color: black; font-size: 25px;"></i></a>
+                        <a href="mailto:learnbylistening0@gmail.com" target="_blank"><i class="fa-regular fa-envelope" style="color: black; font-size: 25px;"></i></a>
+                    </div>
+            </section>
+
+            <section>
+             <!--icona documentazione-->
+            <a href="documentazione.html"><i class="fa-regular fa-paste" style="color: #010189; font-size: 22px;"></i></a>
+            <a class="link_blu nounderline" href="documentazione.html"> DOCUMENTAZIONE</a>
+            <p>©2023 property of "Learning by Listening", designed Manconi Giada</p>
+            </section>
+
+             <!--userlike-->
+            <script async type="text/javascript" src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/f365e831e3474f63a53103fbbbfb84829dd51673263744fc9fe99f398fb42c6a.js"></script>
+
+        </footer>
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+      $( document ).ready(function() {
+
+         /* Open Panel */
+
+         $( ".hamburger" ).on('click', function() {
+            $(".menu").toggleClass("menu--open");
+         });
+
+      });
+    </script>
+
+
+    </body>
+</html>
+

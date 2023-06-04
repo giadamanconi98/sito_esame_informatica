@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Learn by listening</title>
+        
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Roboto+Serif:ital,opsz,wght@1,8..144,900&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/969c53cd30.js" crossorigin="anonymous"></script>
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="file_css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav>
+                <ul class="menu">
+                    <li class="primo"><a class="link_attivo" href="#">HOME</a></li>
+                        
+                        <div class="dropdown">
+                            <span>IL METODO</span>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a class="link_nero nounderline" href="method.html">SCOPRI IL METODO</a>
+                                    <li><a class="link_nero nounderline" href="quiz.html">VAI AL TEST</a></li>
+                                    <li><a class="link_nero nounderline" href="start.html">INIZIA SUBITO!</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                    <li class="terzo"><a class="link_nero nounderline" href="recensioni.html">DICONO DI NOI</a></li>
+                    <li class="quarto"><a class="link_nero nounderline" href="about.html">ABOUT US</a></li>
+                    <li class="quinto"><a class="link_nero nounderline" href="contact.html">CONTATTI</a></li>
+                    <li class="sesto"><a class="link_nero nounderline" href="work.html">LAVORA CON NOI</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <img id="immaginehome" src="immagini/immagine_home.png" alt=logo/>
+        </header>
+
+		<section class="iniziopagina" style="font-size: x-large;">
+            <h1>Benvenutǝ in Learn by listening!</h1>
+        </section>
+        <section style="font-size: larger;">
+            <p>Ti è mai capitato di dover chiedere informazioni in vacanza e non sapere da dove partire?</p>
+            <p> O magari devi aiutare tuǝ figliǝ con i compiti di inglese ma ti sfuggono le parole?</p>
+        </section>
+        <section style="font-size: larger;"> 
+            <h3>Ormai conoscere l'inglese è diventato indispensabile!</h3>
+        </section>
+        <section style="font-size: larger;">
+            <h2>E se ci fosse un modo più divertente per impararlo?</h2>
+            <p>Learn by listening nasce per dare a tuttǝ la possibilità di imparare l'inglese in modo piacevole!</p>
+            <p>Molte teorie pedagogiche mostrano come l'attenzione ai testi di musica pop, e non solo, può aiutare ad ampliare il proprio lessico e migliorare la padronanza della lingua parlata. </p>
+        </section>	
+            
+        <section>
+            <a href="start.html" title="scegli_canzone">
+            <input class="bottone" name="button" value="Inizia subito!" type="submit">
+            </a>
+        </section>
+
+        <footer>
+            <section>
+                <p>Seguici sui nostri canali social!</p>
+            <!--icone social-->
+                    <div class="iconesocial">
+                        <a href="https://www.facebook.com/profile.php?id=100092352554851" target="_blank" title="facebook"><i class="fa-brands fa-facebook" style="color: black; font-size: 25px;"></i></a>
+                        <a href="https://instagram.com/learn.by.listening?igshid=ZDc4ODBmNjlmNQ==" target="_blank" title="instagram"><i class="fa-brands fa-instagram" style="color: black; font-size: 25px;"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=393930979696&text&type=phone_number&app_absent=0" target="_blank" title="whatsapp"><i class="fa-brands fa-whatsapp" style="color: black; font-size: 25px;"></i></a>
+                        <a href="mailto:learnbylistening0@gmail.com" target="_blank"><i class="fa-regular fa-envelope" style="color: black; font-size: 25px;"></i></a>
+                    </div>
+            </section>
+
+            <section>
+            <!--icona documentazione-->
+            <a href="documentazione.html"><i class="fa-regular fa-paste" style="color: #010189; font-size: 22px;"></i></a>
+            <a class="link_blu nounderline" href="documentazione.html"> DOCUMENTAZIONE</a>
+            <p>©2023 property of "Learning by Listening", designed Manconi Giada</p>
+            </section>
+
+            <!--userlike-->
+            <script async type="text/javascript" src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/f365e831e3474f63a53103fbbbfb84829dd51673263744fc9fe99f398fb42c6a.js"></script>
+
+        </footer>
+
+     <!--Jquery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+     <script>
+       $( document ).ready(function() {
+ 
+          /* Open Panel */
+ 
+          $( ".hamburger" ).on('click', function() {
+             $(".menu").toggleClass("menu--open");
+          });
+ 
+       });
+     </script>
+    
+   </body>
+</html>
+
