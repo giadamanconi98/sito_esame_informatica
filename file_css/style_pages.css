@@ -194,8 +194,8 @@ input:hover{
 }
 
 .wireframeh{
-    width: 30%;
-    height: 50px;
+    height: 10%;
+    width: auto;
     padding-left: 1.5%;
     padding-right: 1.5%;
     padding-bottom: 3%;
